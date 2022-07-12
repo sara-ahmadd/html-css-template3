@@ -496,6 +496,7 @@ header .container nav ul li:nth-of-type(4) .drop-list ul li i {
   position: relative;
   flex-basis: 60;
   margin-bottom: 30vh;
+  z-index: 3;
 }
 @keyframes moveup {
   0% {
@@ -503,6 +504,9 @@ header .container nav ul li:nth-of-type(4) .drop-list ul li i {
   }
   30% {
     top: 10%;
+  }
+  60% {
+    top: 15%;
   }
   100% {
     top: 0%;
