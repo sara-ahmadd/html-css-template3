@@ -548,6 +548,11 @@ header .container nav ul li:nth-of-type(4) .drop-list ul li i {
   }
   .intro .container .intro-parag {
     flex-basis: 100%;
+    text-align: center;
+  }
+  .intro .container .intro-parag p,
+  h2 {
+    font-size: 20px;
   }
 }
 @media (max-width: 768px) {
@@ -590,7 +595,7 @@ header .container nav ul li:nth-of-type(4) .drop-list ul li i {
   padding: 10px;
   color: var(--font-color);
 }
-#articles .container .content .crd .text h2 {
+#articles .container .content .crd .text h4 {
   text-transform: capitalize;
   color: #333;
 }
@@ -618,6 +623,11 @@ header .container nav ul li:nth-of-type(4) .drop-list ul li i {
   }
   to {
     transform: translate(10px);
+  }
+}
+@media (max-width: 768px) {
+  #articles .container .content .crd .readmore a {
+    font-size: 17px;
   }
 }
 /* articles end */
@@ -743,6 +753,9 @@ header .container nav ul li:nth-of-type(4) .drop-list ul li i {
   }
   #articles .container .content .crd .photo {
     width: 100%;
+  }
+  #articles .container .content .crd .text p {
+    font-size: 20px;
   }
   #articles .container .content .crd,
   #gallery .container .gallery-content .img {
@@ -2112,14 +2125,14 @@ h3 {
 /* request a discount start */
 #request-a-discount {
   width: 100vw;
-  height: 100vh;
+  height: fit-content;
   padding-bottom: 30px;
 }
 #request-a-discount .main-content {
   display: flex;
   align-items: center;
   width: 100vw;
-  height: 100vh;
+  height: fit-content;
   text-align: center;
 }
 #request-a-discount .main-content .discount {
@@ -2127,7 +2140,6 @@ h3 {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  flex-basis: 50%;
   text-transform: capitalize;
 }
 #request-a-discount .main-content .discount h2 {
@@ -2195,37 +2207,37 @@ h3 {
 }
 @keyframes background-pictures {
   from {
-    background-image: url(../pictures/discount1.jpg);
+    background-image: url("../pictures/discount1.jpg");
   }
   10% {
-    background-image: url(../pictures/discount2.jpg);
+    background-image: url("../pictures/discount2.jpg");
   }
   20% {
-    background-image: url(../pictures/discount10.jpg);
+    background-image: url("../pictures/discount10.jpg");
   }
   30% {
-    background-image: url(../pictures/discount3.jpg);
+    background-image: url("../pictures/discount3.jpg");
   }
   40% {
-    background-image: url(../pictures/discount4.jpg);
+    background-image: url("../pictures/discount4.jpg");
   }
   50% {
-    background-image: url(../pictures/discount5.jpg);
+    background-image: url("../pictures/discount5.jpg");
   }
   60% {
-    background-image: url(../pictures/discount6.jpg);
+    background-image: url("../pictures/discount6.jpg");
   }
   70% {
-    background-image: url(../pictures/discount7.jpg);
+    background-image: url("../pictures/discount7.jpg");
   }
   80% {
-    background-image: url(../pictures/discount8.jpg);
+    background-image: url("../pictures/discount8.jpg");
   }
   90% {
-    background-image: url(../pictures/discount9.jpg);
+    background-image: url("../pictures/discount9.jpg");
   }
   to {
-    background-image: url(../pictures/discount10.jpg);
+    background-image: url("../pictures/discount10.jpg");
   }
 }
 #request-a-discount .main-content .discount:nth-of-type(1) p {
@@ -2240,7 +2252,7 @@ h3 {
 /* footer start */
 footer {
   background-color: var(--border);
-  height: 50vh;
+  height: fit-content;
   width: 100vw;
 }
 footer .container {
@@ -2358,8 +2370,7 @@ footer hr {
   margin: 30px 0;
 }
 footer #last-line {
-  margin: 30px 0;
-  padding: 30px auto;
+  padding: 40px auto;
   text-align: center;
   text-transform: capitalize;
 }
@@ -2369,7 +2380,7 @@ footer #last-line i {
 @media (max-width: 1024px) {
   footer {
     width: 100vw;
-    height: 40vh;
+    height: fit-content;
   }
   #request-a-discount {
     margin-bottom: 30px;
@@ -2384,7 +2395,7 @@ footer #last-line i {
   }
   footer {
     width: 100vw;
-    height: 70vh;
+    height: fit-content;
   }
   footer .container {
     margin-top: 10%;
